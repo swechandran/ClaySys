@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <script src="../setup/js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <button id="mybutton">Clickme</button>
+    <div id="hoverdiv" style="width:100px;height: 100px;background-color: aquamarine;"></div>
+    <input type="text" id="inputfield" placeholder="focusonme">
+    <input type="text" id="inputfield1" placeholder="blur">
+    <div id="parent">
+        <button class="child">Child button</button>
+    </div>
+    <script>
+        $('#mybutton').click(function () {
+            alert('button clicked')
+        })
+
+        //hover
+        $('#hoverdiv').hover(function () {
+            $(this).css('background-color', 'blue')
+        }, function () {
+            $(this).css('background-color', 'grey')
+        })
+
+        //focus()
+        $('#inputfield').focus(function () {
+            $(this).css('border', '2px solid green')
+        })
+
+        //blur()
+        $('#inputfield1').blur(function () {
+            $(this).css('border', '2px solid red')
+        })
+
+        //on()-current or new element event handling
+        $('#parent').on('click', '.child', function () {
+            alert('child button clicked')
+        })
+
+        //off()-to off on()
+        $('#mybutton').on('click', showAlert)
+        function showAlert() {
+            alert('on button clicked')
+            $('#mybutton').off('click', showAlert)
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

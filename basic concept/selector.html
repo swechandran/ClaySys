@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script src="../setup/js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- selectors -->
+    <div id="firstselector">content </div>
+    <div class="seconddiv">content of class selector</div>
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+    <!-- form -->
+    <form action="">
+        <input type="text" placeholder="enter mail" name="mailid">
+        <input type="password" placeholder="enter password">
+        <!-- link -->
+        <a href="https://example.com">link1</a>
+        <a href="https://example.org">link2</a>
+        <div class="container">
+            <p>para1</p>
+            <p>para2</p>
+        </div>
+
+    </form>
+    <script>
+        // id selector
+        $("#firstselector").text("content of id selector");
+        // class selector
+        $(".seconddiv").css("background-color", "yellow");
+        // element selector
+        $("p").css("color", "red");
+        // attribute selector
+        $("[placeholder]").css("border", "3px solid red");
+        // value selector
+        $('[name="mailid"]').val("swetha@123")
+        //partial selector
+        $('a[href*="example"]').css('color', 'red');
+        //descendant selector
+        $('.container p').css('color','blue');
+    </script>
+
+</body>
+
+</html>

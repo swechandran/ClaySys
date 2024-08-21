@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+    <script src="../setup/js/jquery-3.7.1.js"></script>
+    <style>
+        .highlight {
+            background-color: aqua;
+        }
+
+        .container {
+            padding: 20px;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">Old html</div>
+    <img id="logo" src="logo.png" alt="logo">
+    <input type="text" id="textfield" value="contentoftext">
+    <div id="parent"></div>
+    <div id="toremove">this will remove</div>
+    <div id="box">Content</div>
+    <div class="highlight" id="box1">Content1</div>
+    <div id="box2">Content2</div>
+    <div class="highlight" id="box3">Content3</div>
+    <div class="container">
+        <button id="myButton">Click me</button>
+    </div>
+    <script>
+        // html() - change all
+        $('#content').html('<p>new content of html function</p>')
+        // text()
+        $('#content').text('content of text function')
+        // attr()
+        $('#logo').attr('src', 'newlogo.png');
+        //to change element value- val()
+        $('#textfield').val('contentoftext');
+        // insert element , only specific element
+        $('#parent').append('<p>text2</p>');
+        // prepend() - to insert element at beginning of all element
+        $('#parent').prepend('<p>text1</p>');
+        // remove()
+        $('#toremove').remove();
+        //add class()
+        $('#box').addClass('highlight');
+        //remove class()
+        $('#box1').removeClass('highlight');
+        //toggle class() add->remove remove->add
+        $('#box2').toggleClass('highlight');
+        $('#box3').toggleClass('highlight');
+        //parent
+        $('#myButton').click(function () {
+            var parent1 = $(this).parent();
+            parent1.toggleClass('highlight');
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>
