@@ -1,0 +1,90 @@
+/* style for main form */
+.mainform 
+{
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid grey;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+.firstheading
+{
+    text-align: left;
+    color: black;
+}
+.secondheading 
+{
+    color: rgb(81, 113, 177);
+}
+label {
+    margin: 15px 0 5px;
+    color: grey;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid rgb(208, 203, 203);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.emailDiv {
+    width: 350px;
+}
+.nameDiv {
+    display: flex;
+    gap: 8px;
+}
+.nameDiv div {
+    width: 48%;
+    display: inline-block;
+}
+.cityRegionField {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.phoneField {
+    display: flex;
+    align-items: center;
+}
+#phoneNumber,#shippingphoneNumber{
+    width: 260px;
+    height: 29px;
+}
+.emailField {
+    margin-left: 5px !important;
+}
+.emailLabel {
+    margin-left: 270px;
+}
+select {
+    width: 15%;
+}
+.addressField,.cityRegionField{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.addressField div:nth-child(2),.cityRegionField div:nth-child(2){
+    width: 100%;
+    
+}
+#countrySelect,#regionSelect,#shippingcountrySelect{
+    width: 100%;
+}
+.radioButtons {
+    display: flex !important;
+    gap: 100px;
+    margin-top: 10px;
+}
+#clickbutton {
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
+}

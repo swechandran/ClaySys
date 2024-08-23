@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="mainform">
+        <h1 class="firstheading">Wholesale Product Order</h1>
+        <form>
+            <h3 class="secondheading">Purchaser's Information</h3>
+            <label for="Name">Name</span></label>
+                <div class="nameDiv">
+                <div>
+                    <input type="text" id="firstName" placeholder="First" onfocusout="isValidFirstname(this)"
+                        required />
+                    <small class="error"></small>
+                </div>
+                <div>
+                    <input type="text" id="lastName" placeholder="Last" onfocusout="validateTextField(this)" />
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div>
+                <label for="companyName">Company name</label>
+                <input type="text" id="companyName" placeholder="Description" onfocusout="validateTextField(this)" />
+                <small class="error"></small>
+            </div>
+            <div class="phoneField">
+                <label for="phoneNumber">Phone number</label>
+                <label for="email" class="emailLabel">Email</label>
+                <small class="error"></small>
+            </div>
+            <div class="phoneField">
+                <select>
+                    <option>🏁</option>
+                </select>
+                <div>
+                    <input type="number" id="phoneNumber" placeholder="(201) 555-0123"
+                        onfocusout="validateTextField(this)" />
+                    <small class="error"></small>
+                </div>
+                <div class="emailDiv">
+                    <input type="email" id="emailId" class="emailField" placeholder="person@example.com"
+                        onfocusout="validateEmail(this)" />
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div>
+                <label for="Address">Address</label>
+                <input type="text" id="addressline1" placeholder="Address line 1"
+                    onfocusout="validateTextField(this)" />
+                <small class="error"></small>
+                <input type="text" id="addressline2" placeholder="Address line 2"
+                    onfocusout="validateTextField(this)" />
+                <small class="error"></small>
+            </div>
+            <div class="cityRegionField">
+                <div class="city-box">
+                    <input type="text" id="city" placeholder="City" onfocusout="validateTextField(this)" />
+                    <small class="error"></small>
+                </div>
+                <div class="regionSelect-box">
+                    <select id="regionSelect">
+                        <option value="none">None</option>
+                        <option value="Region">Region</option>
+                    </select>
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div class="addressField">
+                <div>
+                    <input type="text" id="pincode" placeholder="Postal / Zip Code"
+                        onfocusout="validateTextField(this)" />
+                    <small class="error"></small>
+                </div>
+                <div>
+                    <select id="countrySelect">
+                        <option value="none">None</option>
+                        <option value="US">United States</option>
+                    </select>
+                    <small class="error"></small>
+                </div>
+            </div>
+            <label for="shipping">Is the shipping information the same with the Purchaser's information
+                above?</label>
+            <div class="radioButtons">
+                <label><input id="radioYes" type="radio" name="shipping" value="yes"
+                        onfocusout="validateTextField(this)" />
+                    Yes</label>
+                <label><input id="RadioNo" type="radio" name="shipping" value="no"
+                        onfocusout="validateTextField(this)" />
+                    No</label>
+                <small class="error"></small>
+            </div>
+            <h3 class="heading_2">Shipping information</h3>
+            <label for="Name">Name</label>
+            <div class="nameDiv">
+                <div>
+                    <input type="text" id="shippingfirstName" placeholder="First" onfocusout="isValidFirstname(this)" />
+                    <small class="error"></small>
+                </div>
+                <div>
+                    <input type="text" id="shippinglastName" placeholder="Last" onfocusout="validateTextField(this)" />
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div>
+                <label for="companyName">Company name</label>
+                <input type="text" id="shippingcompanyName" placeholder="Description"
+                    onfocusout="validateTextField(this)" />
+                <small class="error"></small>
+            </div>
+            <div class="phoneField">
+                <label for="phoneNumber">Phone number</label>
+                <label for="email" class="emailLabel">Email</label>
+                <small class="error"></small>
+            </div>
+            <div class="phoneField">
+                <select>
+                    <option>🏁</option>
+                </select>
+                <div>
+                    <input type="number" id="shippingphoneNumber" placeholder="(201) 555-0123"
+                        onfocusout="validateTextField(this)" />
+                    <small class="error"></small>
+                </div>
+                <div class="emailDiv">
+                    <input type="email" id="shippingemailId" class="emailField" placeholder="person@example.com"
+                        onfocusout="validateEmail(this)" />
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div>
+                <label for="Address">Address</label>
+                <input type="text" id="shippingaddressline1" placeholder="Address line 1"
+                    onfocusout="validateTextField(this)" />
+                <small class="error"></small>
+                <input type="text" id="shippingaddressline2" placeholder="Address line 2"
+                    onfocusout="validateTextField(this)" />
+                <small class="error"></small>
+            </div>
+            <div class="cityRegionField">
+                <div>
+                    <input type="text" id="shippingcity" placeholder="City" onfocusout="validateTextField(this)" />
+                    <small class="error"></small>
+                </div>
+                <div>
+                    <select id="regionSelect">
+                        <option value="none">None</option>
+                        <option value="Region">Region</option>
+                    </select>
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div class="addressField">
+                <div>
+                    <input type="text" id="shippingpincode" placeholder="Postal / Zip Code"
+                        onfocusout="validateTextField(this)" />
+                    <small class="error"></small>
+                </div>
+
+                <div class="shippingcountrySelect-box">
+                    <select id="shippingcountrySelect">
+                        <option value="none">None</option>
+                        <option value="US">United States</option>
+                    </select>
+                    <small class="error"></small>
+                </div>
+            </div>
+            <button id="clickbutton" type="button" onclick="submitButton()">Next</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
