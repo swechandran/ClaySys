@@ -1,0 +1,106 @@
+body {
+    font-family: "Arial", "Helvetica", "Tahoma", "Verdana", sans-serif;
+    background-image: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg");
+    background-color: #257bf4, #e0eafc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loginFormDiv{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+    padding: 20px;
+    width: 500px;
+    background: linear-gradient(to bottom right,#257bf4, #e0eafc);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.heading{
+    text-align: center;
+}
+/* floating label */
+.floating-label {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.floating-label input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    margin: 0 auto;
+}
+.floating-label label {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    margin-left: 90px;
+    width: 60%;
+}
+ /* Shrink the label */
+.floating-label input:focus ~ label,
+.floating-label input:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: white;
+}
+
+/*focus styles to input */
+.floating-label input:focus {
+    border-bottom: 2px solid white;
+}
+/*Add hover effect */
+.floating-label input:hover {
+    border-bottom: 2px solid white;
+}
+.options{
+    font-size: 15px;
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.buttonDiv{
+    width: 60%;
+    margin: 90px auto;
+    text-align: center;
+}
+.loginButton {
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 30px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+.loginButton:hover {
+    background-color: #0056b3; 
+}
+.loginButton:active {
+    background-color: #004085; 
+}
+.loginButton:focus {
+    outline: none; 
+}
+.signUpDiv{
+    text-align: center;
+    font-size:medium;
+}
+.error-message{
+    margin-left: 92px;
+    font-size: 13px;
+    color: rgb(203, 0, 0);
+}
+

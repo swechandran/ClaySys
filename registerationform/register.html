@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterForm</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="headerfield">
+            <h1 class="firstheading">Create Your Account</h1>
+            <p class="secondheading">Join us today and start your journey!</p>
+        </header>
+        <form id="register">
+            <section>
+                <h2>Personal Information</h2>
+                <div class="inputfields">
+                    <input type="text" id="firstName" placeholder=" ">
+                    <label for="firstName">First Name</label>
+                    <div class="error-message" id="firstNameError"></div>
+                </div>
+                <div class="inputfields">
+                    <input type="text" id="lastName" placeholder=" ">
+                    <label for="lastName">Last Name</label>
+                    <div class="error-message" id="lastNameError"></div>
+                </div>
+                <div class="inputfields">
+                    <input type="date" id="dob" placeholder=" " max="2024-08-23">
+                    <label for="dob"></label>
+                    <div class="error-message" id="dobError"></div>
+                </div>
+                <div class="radiofield">
+                    <label>Gender:</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+                    <div class="error-message" id="genderError"></div>
+                </div>
+            </section>
+            <section>
+                <h2>Contact Information</h2>
+                <div class="inputfields">
+                    <input type="number" id="phone" placeholder=" ">
+                    <label for="phone">Phone Number</label>
+                    <div class="error-message" id="phoneError"></div>
+                </div>
+                <div class="inputfields">
+                    <input type="email" id="email" placeholder=" ">
+                    <label for="email">Email Address</label>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+            </section>
+            <section>
+                <div class="inputfields">
+                    <textarea id="address" rows="3" placeholder=" "></textarea>
+                    <label for="address">Address</label>
+                    <div class="error-message" id="addressError"></div>
+                </div>
+                <div class="inputfields">
+                    <select id="state">
+                        <option value="" disabled selected>Select your state</option>
+                        <option value="TN">TamilNadu</option>
+	                    <option value="AR">Arunachal Pradesh</option>
+	                    <option value="AS">Assam</option>
+	                    <option value="BR">Bihar</option>
+	                    <option value="CT">Chhattisgarh</option>
+	                    <option value="GA">Gujarat</option>
+	                    <option value="HR">Haryana</option>
+	                    <option value="HP">Himachal Pradesh</option>
+	                    <option value="JK">Jammu and Kashmir</option>
+	                    <option value="RJ">Rajasthan</option>
+	                    <option value="SK">Sikkim</option>
+	                    <option value="TN">Tamil Nadu</option>
+                    </select>
+                    <label for="state"></label>
+                    <div class="error-message" id="stateError"></div>
+                </div>
+                <div class="inputfields">
+                    <select id="city" name="city">
+                        <option value="" disabled selected>Select your city</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Kangayam">Kangayam</option>
+                        <option value="Kanniyakumari">Kanniyakumari</option>
+                        <option value="Karaikkudi">Karaikkudi</option>
+    
+                    </select>
+                    <label for="city"></label>
+                    <div class="error-message" id="cityError"></div>
+                </div>
+            </section>
+            <section>
+                <h2>Account Information</h2>
+                <div class="inputfields">
+                    <input type="text" id="username" placeholder=" ">
+                    <label for="username">Username</label>
+                    <div class="error-message" id="usernameError"></div>
+                </div>
+                <div class="inputfields">
+                    <input type="password" id="password" placeholder=" ">
+                    <label for="password">Password</label>
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+                <div class="inputfields">
+                    <input type="password" id="confirmPassword" placeholder=" ">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="error-message" id="confirmPasswordError"></div>
+                </div>
+            </section>
+            <div class="buttons">
+                <input type="button" class="primarybutton" id="loginButton" value="Signup">
+                <button type="button" class="secondarybutton" onclick="history.back()">Back</button>
+            </div>
+        </form>
+        <footer class="footersection">
+            <p>Already have an account? <a href="../loginpage/login.html">Login</a></p>
+        </footer>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
