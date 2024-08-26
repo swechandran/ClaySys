@@ -1,7 +1,7 @@
-create table student(student_id INT ,first_name VARCHAR(50),last_name VARCHAR(50),age INT,grade CHAR(2));
+CREATE TABLE student(student_id INT ,first_name VARCHAR(50),last_name VARCHAR(50),age INT,grade CHAR(2));
 --inserting values
-insert into student(student_id, first_name, last_name, age, grade)
-values(1,'swetha','chandran',15,'A'),
+INSERT INTO student(student_id, first_name, last_name, age, grade)
+VALUES(1,'swetha','chandran',15,'A'),
 (2, 'sri','hari',16,'B'),
 (3, 'sri','ram',17,'A'),
 (4, 'harish','raja', 15, 'C'),
@@ -42,6 +42,34 @@ SELECT * FROM student where grade IN ('A', 'C');
 SELECT * FROM student where age between 15 and 17;
 --alias
 SELECT first_name AS "First Name", last_name AS "Last Name" FROM student;
+
+--second largest
+-- Create employee table
+CREATE TABLE Employees (
+  EmployeeID int,
+  Name varchar(255),
+  Salary decimal(10, 2)
+);
+-- Insert data into the table
+INSERT INTO Employees (EmployeeID, Name, Salary)
+VALUES
+  (1, 'Swetha', 50000.00),
+  (2, 'Shree', 60000.00),
+  (3, 'Smitha', 70000.00),
+  (4, 'Harish', 55000.00),
+  (5, 'jeeva', 65000.00);
+
+--second largest salary
+SELECT Salary AS SecondLargestSalary
+FROM Employees
+WHERE Salary < (SELECT MAX(Salary) FROM Employees);
+
+SELECT MAX(Salary) AS SecondLargestSalary
+FROM Employees
+WHERE Salary < (SELECT MAX(Salary) FROM Employees);
+
+--pivot and unpivot
+
 
 
 
