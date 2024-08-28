@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\SQLConnection\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A92E318-64FC-43C4-8C32-81F5E58B39BF}|SQLConnection\\SQLConnection.csproj|c:\\users\\hp\\source\\repos\\sqlconnection\\sqlconnection\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A92E318-64FC-43C4-8C32-81F5E58B39BF}|SQLConnection\\SQLConnection.csproj|solutionrelative:sqlconnection\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A92E318-64FC-43C4-8C32-81F5E58B39BF}|SQLConnection\\SQLConnection.csproj|C:\\Users\\HP\\source\\repos\\SQLConnection\\sqlconnection\\demodataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{0A92E318-64FC-43C4-8C32-81F5E58B39BF}|SQLConnection\\SQLConnection.csproj|solutionrelative:sqlconnection\\demodataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "demoDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\SQLConnection\\SQLConnection\\demoDataSet.xsd",
+              "RelativeDocumentMoniker": "SQLConnection\\demoDataSet.xsd",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\SQLConnection\\SQLConnection\\demoDataSet.xsd",
+              "RelativeToolTip": "SQLConnection\\demoDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-08-28T12:32:56.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\SQLConnection\\SQLConnection\\Program.cs",
+              "RelativeDocumentMoniker": "SQLConnection\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\SQLConnection\\SQLConnection\\Program.cs",
+              "RelativeToolTip": "SQLConnection\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T12:26:21.991Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

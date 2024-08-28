@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\SQLConnection\SQLConnection\bin\Debug\SQLConnection.exe.config
+C:\Users\HP\source\repos\SQLConnection\SQLConnection\bin\Debug\SQLConnection.exe
+C:\Users\HP\source\repos\SQLConnection\SQLConnection\bin\Debug\SQLConnection.pdb
+C:\Users\HP\source\repos\SQLConnection\SQLConnection\obj\Debug\SQLConnection.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\SQLConnection\SQLConnection\obj\Debug\SQLConnection.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\SQLConnection\SQLConnection\obj\Debug\SQLConnection.exe
+C:\Users\HP\source\repos\SQLConnection\SQLConnection\obj\Debug\SQLConnection.pdb

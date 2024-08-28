@@ -176,7 +176,11 @@ select * from Employees;
 select * from Department;
 
 UPDATE Employees SET LastName='Shree' WHERE EmployeeID=5;
-
+ALTER TABLE Employees 
+ADD desgination varchar(255);
+SELECT * FROM Employees;
+UPDATE Employees 
+SET desgination='Manager' where EmployeeID=1;
 
 
 

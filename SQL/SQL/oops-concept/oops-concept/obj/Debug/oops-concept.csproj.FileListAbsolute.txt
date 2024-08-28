@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\oops-concept\oops-concept\bin\Debug\oops-concept.exe.config
+C:\Users\HP\source\repos\oops-concept\oops-concept\bin\Debug\oops-concept.exe
+C:\Users\HP\source\repos\oops-concept\oops-concept\bin\Debug\oops-concept.pdb
+C:\Users\HP\source\repos\oops-concept\oops-concept\obj\Debug\oops-concept.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\oops-concept\oops-concept\obj\Debug\oops-concept.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\oops-concept\oops-concept\obj\Debug\oops-concept.exe
+C:\Users\HP\source\repos\oops-concept\oops-concept\obj\Debug\oops-concept.pdb

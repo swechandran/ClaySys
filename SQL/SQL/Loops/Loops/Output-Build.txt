@@ -1,0 +1,5 @@
+﻿Build started at 14:04...
+1>------ Build started: Project: Collections, Configuration: Debug Any CPU ------
+1>  Collections -> C:\Users\HP\source\repos\Collections\Collections\bin\Debug\Collections.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 14:04 and took 00.425 seconds ==========

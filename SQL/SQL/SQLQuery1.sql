@@ -68,7 +68,7 @@ SELECT MAX(Salary) AS SecondLargestSalary
 FROM Employees
 WHERE Salary < (SELECT MAX(Salary) FROM Employees);
 
---pivot and unpivot
+
 
 
 
