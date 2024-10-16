@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterPageBasic", "RegisterPageBasic.csproj", "{EF9A7B3E-66FA-44AD-9D2A-C5F7C050D78A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignupPagewithbasecontroller", "..\SignupPage\SignupPagewithbasecontroller.csproj", "{6B7D811D-C9C9-4D8B-8776-38A1D4CF8DD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF9A7B3E-66FA-44AD-9D2A-C5F7C050D78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9A7B3E-66FA-44AD-9D2A-C5F7C050D78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9A7B3E-66FA-44AD-9D2A-C5F7C050D78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9A7B3E-66FA-44AD-9D2A-C5F7C050D78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B7D811D-C9C9-4D8B-8776-38A1D4CF8DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B7D811D-C9C9-4D8B-8776-38A1D4CF8DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B7D811D-C9C9-4D8B-8776-38A1D4CF8DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B7D811D-C9C9-4D8B-8776-38A1D4CF8DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB4789DA-C8C9-4FB8-8243-040A7CD2D2D3}
+	EndGlobalSection
+EndGlobal

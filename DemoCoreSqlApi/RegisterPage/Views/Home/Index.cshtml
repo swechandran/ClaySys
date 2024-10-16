@@ -1,0 +1,262 @@
+﻿ 
+ @model RegisterPage.Models.RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6D5BBA, #8D58BF);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding:25px 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 320px;
+            height:max-content;
+        }
+
+        h2 {
+            text-align: center;
+            color: #6D5BBA;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+            .form-group label {
+                font-weight: bold;
+                width: 100%;
+            }
+
+        .form-control {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+            .form-control:focus {
+                border-color: #6D5BBA;
+                box-shadow: 0 0 5px rgba(109, 91, 186, 0.5);
+            }
+
+        .text-danger {
+            color: red;
+            font-size: 12px;
+        }
+
+        .btn {
+            background-color: #6D5BBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .btn:hover {
+                background-color: #8D58BF;
+            }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+        select.form-control {
+             appearance: none;
+             background-color: white;
+             width:95%;
+         }
+
+         
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Registration</h2>
+        <form id="registerForm" asp-action=" " method="post">
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" id="FirstName" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" id="LastName" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DateOfBirth" class="control-label"></label>
+                <input asp-for="DateOfBirth" class="form-control" type="date" id="DateOfBirth" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <select asp-for="Gender" class="form-control" id="Gender">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" id="PhoneNumber" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EmailAddress" class="control-label"></label>
+                <input asp-for="EmailAddress" class="form-control" id="EmailAddress" />
+                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" id="Address"   />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" id="Username" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" type="password" id="Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn" id="registerbutton">Register</button>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        //     let registerstatus = $("#registerForm").validate({
+        //         rules: {
+        //             FirstName: {
+        //                 required: true,
+        //                 maxlength: 50
+        //             },
+        //             LastName: {
+        //                 required: true,
+        //                 maxlength: 50
+        //             },
+        //             DateOfBirth: {
+        //                 required: true,
+        //                 date: true
+        //             },
+        //             Gender: {
+        //                 required: true
+        //             },
+        //             PhoneNumber: {
+        //                 required: true,
+        //                 maxlength: 20,
+        //                 minlength: 10
+        //             },
+        //             EmailAddress: {
+        //                 required: true,
+        //                 email: true
+        //             },
+        //             Address: {
+        //                 required: true,
+        //                 maxlength: 200
+        //             },
+        //             Username: {
+        //                 required: true,
+        //                 maxlength: 50
+        //             },
+        //             Password: {
+        //                 required: true,
+        //                 minlength: 6,
+        //                 maxlength: 100
+        //             }
+        //         },
+        //         messages: {
+        //             FirstName: "Please enter your first name",
+        //             LastName: "Please enter your last name",
+        //             DateOfBirth: "Please enter a valid date of birth",
+        //             Gender: "Please select your gender",
+        //             PhoneNumber: {
+        //                 required: "Please enter your phone number",
+        //                 minlength: "Phone number must be at least 10 digits"
+        //             },
+        //             EmailAddress: "Please enter a valid email address",
+        //             Address: "Please enter your address",
+        //             Username: "Please enter a username",
+        //             Password: {
+        //                 required: "Please provide a password",
+        //                 minlength: "Your password must be at least 6 characters long"
+        //             }
+        //         },
+        //         errorClass: "text-danger",
+        //         errorElement: "span"
+        //     });
+
+           $("#registerbutton").click(function (e) {
+                  e.preventDefault();  
+                $.ajax({
+                    url: "/api/RegisteredUsers/register",  
+                    type: "POST",
+                    contentType: "application/json",  
+                    dataType: "json",  
+                    data: JSON.stringify({
+                        FirstName: $("#FirstName").val(),
+                        LastName: $("#LastName").val(),
+                        DateOfBirth: $("#DateOfBirth").val(),
+                        Gender: $("#Gender").val(),
+                        PhoneNumber: $("#PhoneNumber").val(),
+                        EmailAddress: $("#EmailAddress").val(),
+                        Address: $("#Address").val(),  
+                        Username: $("#Username").val(),
+                        Password: $("#Password").val()
+                    }),
+                    success: function (res) {
+                        console.log(res);  
+                    },
+                    error: function (err) {
+                        console.log(err);  
+                    }
+                });
+            });
+
+
+       
+
+    </script>
+</body>
+</html>
